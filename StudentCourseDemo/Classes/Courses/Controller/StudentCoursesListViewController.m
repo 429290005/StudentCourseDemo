@@ -393,7 +393,7 @@
 - (void)coursesListVideoFocus:(int)index
 {
     CoursesObject *obj = [self.listData objectAtIndex:index];
-    // 设置第一响应
+    // 设置响应
     if (self.delegate && [self.delegate respondsToSelector:@selector(showVideoHomeView:)]) {
         [self.delegate showVideoHomeView:obj];
     }

@@ -213,6 +213,11 @@
     [self switchShowViewController:courseVideoVC.leftVC fromViewController:currentVC duration:showTime showRight:NO];
 }
 
+#pragma mark QuestionViewControllerDelegate
+- (void)questionViewControllerBack:(QuestionViewController *)quesVC {
+    [self switchShowViewController:quesVC.leftVC fromViewController:currentVC duration:showTime showRight:NO];
+}
+
 #pragma mark -
 #pragma mark 框架方法
 - (void)addPanGesture
